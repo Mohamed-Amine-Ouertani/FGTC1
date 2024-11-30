@@ -78,14 +78,3 @@ module "fsx" {
   environment        = var.environment
 }
 
-
-
-
-
-
-
-
-
-
-
-
