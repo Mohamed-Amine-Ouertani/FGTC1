@@ -116,7 +116,7 @@ resource "aws_security_group" "s3_endpoint_sg" {
     from_port   = 443
     to_port     = 443
     protocol    = "tcp"
-    cidr_blocks = concat(var.private_subnet_cidrs , [for ip in var.users_ip_addresses : "${ip}/32"])
+    cidr_blocks = concat(var.private_subnet_cidrs , [for ip in var.users_ip_addresses : "${ip}/32"], "${var.fsx_ip}/32")
   }
 
   egress {

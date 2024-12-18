@@ -21,6 +21,11 @@ variable "users_ip_addresses" {
   type = list(string)
 }
 
+variable "fsx_ip" {
+  description = "the IP address of the FSX storage that is allowed to access (get/put/update/delete) the S3 Bucket"
+  type = string
+}
+
 variable "region" {
   description = "curent region"
   type = string

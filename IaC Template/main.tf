@@ -63,6 +63,7 @@ module "s3" {
   private_subnet_ids = module.subnet.private_subnet_ids
   private_subnet_cidrs = module.subnet.private_subnet_cidrs
   users_ip_addresses = var.storage_users_ip_addresses
+  fsx_ip = module.fsx.fsx_ip
   region = var.region
   environment = var.environment
 }
