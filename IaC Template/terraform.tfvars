@@ -26,4 +26,4 @@ ami_id = "ami-0baf6d499ec1a6988" # Replace with your AMI_Id (the template image 
 
 storage_users_ip_addresses = ["192.168.1.16"] # ADD users machines IP addresses that need to Access the S3 bucket and FSx for Luster (full access CRUD)
 
-fsx_storage_capacity = 1200 # Set the desired amount of storage for the fsx for Luster
+fsx_storage_capacity = 1200 # Set the desired amount of storage for the fsx for Luster. 
